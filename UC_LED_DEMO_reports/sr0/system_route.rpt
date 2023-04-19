@@ -1,0 +1,476 @@
+#
+#Copyright (C) 1994-2021 Synopsys, Inc.
+#This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+#and may only be used pursuant to the terms and conditions of a written license agreement
+#with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+#Synopsys software or the associated documentation is strictly prohibited.
+#Tool: HAPS (R) ProtoCompiler 100
+#Build: R-2020.12-SP1-1
+#Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: CentOS release 6.10 (Final)
+#Hostname: ws32
+
+#Database state : /home/m110/m110063541/synos/Lab1_PCflow/UC_LED_DEMO/|sr0
+#Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+@S1 AP337 |Connection Model
+connection_model DIRECT -modules { \
+}
+connection_model HSTDM_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model ACPM -modules { \
+   ACPM_2 2
+   ACPM_3 3
+   ACPM_4 4
+   ACPM_5 5
+   ACPM_6 6
+   ACPM_7 7
+   ACPM_8 8
+   ACPM_9 9
+   ACPM_10 10
+   ACPM_11 11
+   ACPM_12 12
+   ACPM_13 13
+   ACPM_14 14
+   ACPM_15 15
+   ACPM_16 16
+   ACPM_17 17
+   ACPM_18 18
+   ACPM_19 19
+   ACPM_20 20
+   ACPM_24 24
+   ACPM_28 28
+   ACPM_32 32
+}
+connection_model HSTDM -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model MGTDM_Y -modules { \
+   HSTDM_MGT_64 64
+   HSTDM_MGT_128 128
+   HSTDM_MGT_256 256
+   HSTDM_MGT_512 512
+   HSTDM_MGT_1024 1024
+}
+connection_model MGTDM -modules { \
+   HSTDM_ERD_MGT_256 256
+   HSTDM_ERD_MGT_512 512
+   HSTDM_ERD_MGT_1024 1024
+}
+
+@S2 AP248 |Feedthrough Insertion and Net Splitting
+
+modify_net -feedthrough FB1.uB -orig_net Dout[10] -in_net Dout[10] -out_net Dout_aptn_ft[10]
+modify_net -disconnect Dout[10] -connect Dout_aptn_ft[10] -to Port Dout[10]
+modify_net -feedthrough FB1.uB -orig_net Dout[13] -in_net Dout[13] -out_net Dout_aptn_ft[13]
+modify_net -disconnect Dout[13] -connect Dout_aptn_ft[13] -to Port Dout[13]
+modify_net -feedthrough FB1.uB -orig_net Dout[15] -in_net Dout[15] -out_net Dout_aptn_ft[15]
+modify_net -disconnect Dout[15] -connect Dout_aptn_ft[15] -to Port Dout[15]
+modify_net -feedthrough FB1.uB -orig_net Dout[17] -in_net Dout[17] -out_net Dout_aptn_ft[17]
+modify_net -disconnect Dout[17] -connect Dout_aptn_ft[17] -to Port Dout[17]
+modify_net -feedthrough FB1.uB -orig_net Din[0] -in_net Din[0] -out_net Din_aptn_ft[0]
+modify_net -disconnect Din[0] -connect Din_aptn_ft[0] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[6] -in_net Dout[6] -out_net Dout_aptn_ft[6]
+modify_net -disconnect Dout[6] -connect Dout_aptn_ft[6] -to Port Dout[6]
+modify_net -feedthrough FB1.uB -orig_net Din[5] -in_net Din[5] -out_net Din_aptn_ft[5]
+modify_net -disconnect Din[5] -connect Din_aptn_ft[5] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[8] -in_net Dout[8] -out_net Dout_aptn_ft[8]
+modify_net -disconnect Dout[8] -connect Dout_aptn_ft[8] -to Port Dout[8]
+modify_net -feedthrough FB1.uB -orig_net Din[7] -in_net Din[7] -out_net Din_aptn_ft[7]
+modify_net -disconnect Din[7] -connect Din_aptn_ft[7] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Din[4] -in_net Din[4] -out_net Din_aptn_ft[4]
+modify_net -disconnect Din[4] -connect Din_aptn_ft[4] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[12] -in_net Dout[12] -out_net Dout_aptn_ft[12]
+modify_net -disconnect Dout[12] -connect Dout_aptn_ft[12] -to Port Dout[12]
+modify_net -feedthrough FB1.uB -orig_net Dout[11] -in_net Dout[11] -out_net Dout_aptn_ft[11]
+modify_net -disconnect Dout[11] -connect Dout_aptn_ft[11] -to Port Dout[11]
+modify_net -feedthrough FB1.uB -orig_net Dout[9] -in_net Dout[9] -out_net Dout_aptn_ft[9]
+modify_net -disconnect Dout[9] -connect Dout_aptn_ft[9] -to Port Dout[9]
+modify_net -feedthrough FB1.uB -orig_net Dout[14] -in_net Dout[14] -out_net Dout_aptn_ft[14]
+modify_net -disconnect Dout[14] -connect Dout_aptn_ft[14] -to Port Dout[14]
+modify_net -feedthrough FB1.uB -orig_net Dout[0] -in_net Dout[0] -out_net Dout_aptn_ft[0]
+modify_net -disconnect Dout[0] -connect Dout_aptn_ft[0] -to Port Dout[0]
+modify_net -feedthrough FB1.uB -orig_net Dout[7] -in_net Dout[7] -out_net Dout_aptn_ft[7]
+modify_net -disconnect Dout[7] -connect Dout_aptn_ft[7] -to Port Dout[7]
+modify_net -feedthrough FB1.uB -orig_net Din[6] -in_net Din[6] -out_net Din_aptn_ft[6]
+modify_net -disconnect Din[6] -connect Din_aptn_ft[6] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[5] -in_net Dout[5] -out_net Dout_aptn_ft[5]
+modify_net -disconnect Dout[5] -connect Dout_aptn_ft[5] -to Port Dout[5]
+modify_net -feedthrough FB1.uB -orig_net Dout[1] -in_net Dout[1] -out_net Dout_aptn_ft[1]
+modify_net -disconnect Dout[1] -connect Dout_aptn_ft[1] -to Port Dout[1]
+modify_net -feedthrough FB1.uB -orig_net Dout[16] -in_net Dout[16] -out_net Dout_aptn_ft[16]
+modify_net -disconnect Dout[16] -connect Dout_aptn_ft[16] -to Port Dout[16]
+modify_net -feedthrough FB1.uB -orig_net Din[1] -in_net Din[1] -out_net Din_aptn_ft[1]
+modify_net -disconnect Din[1] -connect Din_aptn_ft[1] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[2] -in_net Dout[2] -out_net Dout_aptn_ft[2]
+modify_net -disconnect Dout[2] -connect Dout_aptn_ft[2] -to Port Dout[2]
+modify_net -feedthrough FB1.uB -orig_net Din[3] -in_net Din[3] -out_net Din_aptn_ft[3]
+modify_net -disconnect Din[3] -connect Din_aptn_ft[3] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[4] -in_net Dout[4] -out_net Dout_aptn_ft[4]
+modify_net -disconnect Dout[4] -connect Dout_aptn_ft[4] -to Port Dout[4]
+modify_net -feedthrough FB1.uB -orig_net Din[2] -in_net Din[2] -out_net Din_aptn_ft[2]
+modify_net -disconnect Din[2] -connect Din_aptn_ft[2] -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net Dout[3] -in_net Dout[3] -out_net Dout_aptn_ft[3]
+modify_net -disconnect Dout[3] -connect Dout_aptn_ft[3] -to Port Dout[3]
+
+@S3 AP345 |Net and Global Routing Information
+@N: AP305 |This section contains information only for nets that are external to FPGAs
+
+@S3.1 AP346 |Routed Nets
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[3]
+global_route Dout_aptn_ft[3] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[4]
+global_route Dout_aptn_ft[4] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[2]
+global_route Dout_aptn_ft[2] -multi_hop 2 -slack_pre_tdm 40 -slack_post_tdm 14 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[5]
+global_route Dout_aptn_ft[5] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[6]
+global_route Din_aptn_ft[6] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[9]
+global_route Dout_aptn_ft[9] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[0]
+global_route Dout_aptn_ft[0] -multi_hop 2 -slack_pre_tdm 42 -slack_post_tdm 16 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[11]
+global_route Dout_aptn_ft[11] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[7]
+global_route Din_aptn_ft[7] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[12]
+global_route Dout_aptn_ft[12] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[6]
+global_route Dout_aptn_ft[6] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[0]
+global_route Din_aptn_ft[0] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 19 \
+   -from FB1.uB -to {FB1.uA} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[3]
+global_route Din_aptn_ft[3] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[16]
+global_route Dout_aptn_ft[16] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[17]
+global_route Dout_aptn_ft[17] -slack_pre_tdm 100000 -slack_post_tdm 100000 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[10]
+global_route Dout_aptn_ft[10] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[7]
+global_route Din[7] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[13]
+global_route Dout_aptn_ft[13] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[8]
+global_route Dout_aptn_ft[8] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[5]
+global_route Din[5] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[2]
+global_route Din_aptn_ft[2] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[4]
+global_route Din[4] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[14]
+global_route Dout_aptn_ft[14] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[2]
+global_route Din[2] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[3]
+global_route Din[3] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[1]
+global_route Din[1] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 19 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[0]
+global_route Din[0] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 19 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[17]
+global_route Dout[17] -slack_pre_tdm 100000 -slack_post_tdm 100000 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[15]
+global_route Dout[15] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[15]
+global_route Dout_aptn_ft[15] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[13]
+global_route Dout[13] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[10]
+global_route Dout[10] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[8]
+global_route Dout[8] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[6]
+global_route Dout[6] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[4]
+global_route Dout[4] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[1]
+global_route Din_aptn_ft[1] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 19 \
+   -from FB1.uB -to {FB1.uA} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[3]
+global_route Dout[3] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[2]
+global_route Dout[2] -multi_hop 2 -slack_pre_tdm 40 -slack_post_tdm 14 \
+   -from FB1.uA -to {FB1.uB} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[4]
+global_route Din_aptn_ft[4] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din_aptn_ft[5]
+global_route Din_aptn_ft[5] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[5]
+global_route Dout[5] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[1]
+global_route Dout[1] -multi_hop 2 -slack_pre_tdm 41 -slack_post_tdm 15 \
+   -from FB1.uA -to {FB1.uB} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[16]
+global_route Dout[16] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Din[6]
+global_route Din[6] -multi_hop 2 -slack_pre_tdm 45 -slack_post_tdm 17 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[14]
+global_route Dout[14] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[12]
+global_route Dout[12] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[0]
+global_route Dout[0] -multi_hop 2 -slack_pre_tdm 42 -slack_post_tdm 16 \
+   -from FB1.uA -to {FB1.uB} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[11]
+global_route Dout[11] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[7]
+global_route Dout[7] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -function GCLK -tdm_qualified 0 -is_clock 1 -feedthrough_allowed 0 clk1
+global_route clk1 -slack_pre_tdm 100000 -slack_post_tdm 100000 \
+   -from FB1.PLL1 -to {FB1.uA FB1.uB} -using T_FB1.PLL1_FB1.uA_FB1.uB_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[1]
+global_route Dout_aptn_ft[1] -multi_hop 2 -slack_pre_tdm 41 -slack_post_tdm 15 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout_aptn_ft[7]
+global_route Dout_aptn_ft[7] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 Dout[9]
+global_route Dout[9] -multi_hop 2 -slack_pre_tdm 39 -slack_post_tdm 11 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+
+@S4 AP306 |Detailed Routing Information
+@N: AP306 |This section contains information only for nets which are assigned to board traces
+
+@S4.1 AP348 |Trace Assignments
+
+assign_trace Dout[2] FB1.AI2_N[9]
+assign_trace Dout[1] FB1.AI2_P[9]
+assign_trace Dout[0] FB1.AI2_U[1]
+assign_trace Dout[17] FB1_A1_A[0]
+assign_trace Dout[16] FB1_A1_A[1]
+assign_trace Dout[15] FB1_A1_A[2]
+assign_trace Dout[14] FB1_A1_A[3]
+assign_trace Dout[13] FB1_A1_A[4]
+assign_trace Dout[12] FB1_A1_A[5]
+assign_trace Dout[11] FB1_A1_A[6]
+assign_trace Dout[10] FB1_A1_A[7]
+assign_trace Dout[9] FB1_A1_C[0]
+assign_trace Dout[8] FB1_A1_C[1]
+assign_trace Dout[7] FB1_A1_C[2]
+assign_trace Dout[6] FB1_A1_C[3]
+assign_trace Dout[5] FB1_A1_C[4]
+assign_trace Dout[4] FB1_A1_C[5]
+assign_trace Dout[3] FB1_A1_C[6]
+assign_trace Din_aptn_ft[1] FB1.AI2_U[2]
+assign_trace Din_aptn_ft[0] FB1.AI2_U[3]
+assign_trace Din_aptn_ft[7] FB1_A1_A[8]
+assign_trace Din_aptn_ft[6] FB1_A1_A[9]
+assign_trace Din_aptn_ft[5] FB1_A1_A[10]
+assign_trace Din_aptn_ft[4] FB1_A1_C[7]
+assign_trace Din_aptn_ft[3] FB1_A1_C[8]
+assign_trace Din_aptn_ft[2] FB1_A1_C[9]
+assign_trace Dout_aptn_ft[0] FB1_B5_A[0]
+assign_trace Dout_aptn_ft[1] FB1_B5_A[1]
+assign_trace Dout_aptn_ft[2] FB1_B5_A[2]
+assign_trace Dout_aptn_ft[3] FB1_B5_A[3]
+assign_trace Dout_aptn_ft[4] FB1_B5_A[4]
+assign_trace Dout_aptn_ft[5] FB1_B5_A[5]
+assign_trace Dout_aptn_ft[6] FB1_B5_A[6]
+assign_trace Dout_aptn_ft[7] FB1_B5_A[7]
+assign_trace Dout_aptn_ft[8] FB1_B5_A[8]
+assign_trace Dout_aptn_ft[9] FB1_B5_A[9]
+assign_trace Dout_aptn_ft[10] FB1_B5_A[10]
+assign_trace Dout_aptn_ft[11] FB1_B5_A[11]
+assign_trace Dout_aptn_ft[12] FB1_B5_A[12]
+assign_trace Dout_aptn_ft[13] FB1_B5_B[0]
+assign_trace Dout_aptn_ft[14] FB1_B5_B[1]
+assign_trace Dout_aptn_ft[15] FB1_B5_B[2]
+assign_trace Dout_aptn_ft[16] FB1_B5_B[3]
+assign_trace Dout_aptn_ft[17] FB1_B5_B[4]
+assign_trace Din[7] FB1_B5_B[5]
+assign_trace Din[6] FB1_B5_B[6]
+assign_trace Din[5] FB1_B5_B[7]
+assign_trace Din[4] FB1_B5_B[8]
+assign_trace Din[3] FB1_B5_B[9]
+assign_trace Din[2] FB1_B5_B[10]
+assign_trace Din[1] FB1_B5_B[11]
+assign_trace Din[0] FB1_B5_C[0]
+assign_trace clk1 GCLK1

@@ -1,0 +1,52 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/Lab1_PCflow/UC_LED_DEMO/|sr0
+Synopsys Partitioner, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+##############################################################################
+########################## TDM QUALIFIED NETS ##########################
+##############################################################################
+TDM Qualification type: all
+Qualified Nets  Source FPGA  Sink FPGA(s)  Sink Instance                      Driver Instance  Source Clock  Dest Clock  Clock Group      Slack    
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Dout[0]         FB1.uA       FB1.uB        Dout[17:0].Dout[0]                 Din[7:0].Din[4]  clk1:r        System:r    d1               42.3836  
+Dout[1]         FB1.uA       FB1.uB        Dout[17:0].Dout[1]                 Din[7:0].Din[4]  clk1:r        System:r    d1               40.6492  
+Dout[2]         FB1.uA       FB1.uB        Dout[17:0].Dout[2]                 Din[7:0].Din[4]  clk1:r        System:r    d1               39.8336  
+Dout[3]         FB1.uA       FB1.uB        Dout[17:0].Dout[3]                 Din[7:0].Din[4]  clk1:r        System:r    d1               39.4841  
+Dout[4]         FB1.uA       FB1.uB        Dout[17:0].Dout[4]                 Din[7:0].Din[4]  clk1:r        System:r    d1               39.4253  
+Dout[5]         FB1.uA       FB1.uB        Dout[17:0].Dout[5]                 Din[7:0].Din[4]  clk1:r        System:r    d1               39.0087  
+Dout[6]         FB1.uA       FB1.uB        Dout[17:0].Dout[6]                 Din[7:0].Din[4]  clk1:r        System:r    d1               38.6648  
+Dout[7]         FB1.uA       FB1.uB        Dout[17:0].Dout[7]                 Din[7:0].Din[4]  clk1:r        System:r    d1               38.6402  
+Dout[8]         FB1.uA       FB1.uB        Dout[17:0].Dout[8]                 Din[7:0].Din[4]  clk1:r        System:r    d1               38.636   
+Dout[9]         FB1.uA       FB1.uB        Dout[17:0].Dout[9]                 Din[7:0].Din[4]  clk1:r        System:r    d1               38.5922  
+Dout[10]        FB1.uA       FB1.uB        Dout[17:0].Dout[10]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.5706  
+Dout[11]        FB1.uA       FB1.uB        Dout[17:0].Dout[11]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.5748  
+Dout[12]        FB1.uA       FB1.uB        Dout[17:0].Dout[12]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.57    
+Dout[13]        FB1.uA       FB1.uB        Dout[17:0].Dout[13]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.5412  
+Dout[14]        FB1.uA       FB1.uB        Dout[17:0].Dout[14]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.5268  
+Dout[15]        FB1.uA       FB1.uB        Dout[17:0].Dout[15]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.525   
+Dout[16]        FB1.uA       FB1.uB        Dout[17:0].Dout[16]                Din[7:0].Din[4]  clk1:r        System:r    d1               38.5244  
+Dout[17]        FB1.uA       FB1.uB        Dout[17:0].Dout[17]                Din[7:0].Din[4]  N/A           N/A         N/A              100000   
+Din_aptn_ft[0]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[0]  Din[7:0].Din[0]  System:r      System:r    system_clkgroup  44.6004  
+Din_aptn_ft[5]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[5]  Din[7:0].Din[5]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[7]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[7]  Din[7:0].Din[7]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[4]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[4]  Din[7:0].Din[4]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[6]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[6]  Din[7:0].Din[6]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[1]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[1]  Din[7:0].Din[1]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[3]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[3]  Din[7:0].Din[3]  System:r      System:r    system_clkgroup  44.6458  
+Din_aptn_ft[2]  FB1.uB       FB1.uA        FB1.uA.dut_inst.FIR.SR1[7:0].D[2]  Din[7:0].Din[2]  System:r      System:r    system_clkgroup  44.6458  
+=================================================================================================================================================
