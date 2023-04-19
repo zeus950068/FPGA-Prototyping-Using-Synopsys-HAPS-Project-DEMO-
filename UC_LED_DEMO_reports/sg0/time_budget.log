@@ -1,0 +1,439 @@
+# Wed Apr 19 18:42:04 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/Lab1_PCflow/UC_LED_DEMO/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@N: MF119 |Unified Time Budget flow enabled 
+
+Start loading fpga timing model (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading fpga timing model (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 782MB peak: 782MB)
+
+
+Finished insertion of fpga timing model (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 782MB peak: 782MB)
+
+@N: MF404 |Running Normal timing estimation with effort level 'LOW'
+
+Finished time budget netlist preparation (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 782MB peak: 782MB)
+
+
+Finished writer setup (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 782MB peak: 782MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 782MB peak: 782MB)
+
+@N: MT649 |During time budgeting, Vivado latch mode is off. 
+@N: MT650 |During time budgeting, latch-based time borrowing is disabled. 
+@N: MT615 |Found clock clk1 with period 45.00ns 
+
+
+@S0 |##### START OF TIMING REPORT #####[
+# Timing report written on Wed Apr 19 18:42:12 2023
+#
+
+
+Top view:               top
+Requested Frequency:    22.2 MHz
+Wire load mode:         top
+Paths requested:        5
+The system contains the following FPGAs:
+    FB1.uA : XCVU19PFSVA3824, speedgrade -1-e
+    FB1.uB : XCVU19PFSVA3824, speedgrade -1-e
+Constraint File(s):    /home/m110/m110063541/synos/Lab1_PCflow/design.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+
+@S0.0 |Performance Summary
+*******************
+
+
+Worst slack in design: 37.206
+
+                   Requested     Estimated      Requested     Estimated                 Clock        Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack       Type         Group          
+--------------------------------------------------------------------------------------------------------------------
+clk1               22.2 MHz      1991.2 MHz     45.000        0.502         44.498      declared     d1             
+System             1.0 MHz       78.3 MHz       1000.000      12.778        987.222     system       system_clkgroup
+====================================================================================================================
+
+
+
+
+
+@S0.0 |Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System  |  1000.000    987.222  |  No paths    -      |  No paths    -      |  No paths    -    
+System    clk1    |  45.000      39.500   |  No paths    -      |  No paths    -      |  No paths    -    
+clk1      System  |  45.000      37.206   |  No paths    -      |  No paths    -      |  No paths    -    
+clk1      clk1    |  45.000      44.498   |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port       Starting            User           Arrival     Required           
+Name       Reference           Constraint     Time        Time         Slack 
+           Clock                                                             
+-----------------------------------------------------------------------------
+Din[0]     System (rising)     NA             0.000       40.847       40.847
+Din[1]     System (rising)     NA             0.000       40.893       40.893
+Din[2]     System (rising)     NA             0.000       39.500       39.500
+Din[3]     System (rising)     NA             0.000       39.500       39.500
+Din[4]     System (rising)     NA             0.000       39.500       39.500
+Din[5]     System (rising)     NA             0.000       39.500       39.500
+Din[6]     System (rising)     NA             0.000       39.500       39.500
+Din[7]     System (rising)     NA             0.000       39.500       39.500
+clk1       NA                  NA             NA          NA           NA    
+=============================================================================
+
+
+Output Ports: 
+
+Port         Starting          User           Arrival     Required           
+Name         Reference         Constraint     Time        Time         Slack 
+             Clock                                                           
+-----------------------------------------------------------------------------
+Dout[0]      clk1 (rising)     NA             3.948       45.000       41.052
+Dout[1]      clk1 (rising)     NA             5.669       45.000       39.331
+Dout[2]      clk1 (rising)     NA             6.484       45.000       38.516
+Dout[3]      clk1 (rising)     NA             6.834       45.000       38.166
+Dout[4]      clk1 (rising)     NA             6.893       45.000       38.107
+Dout[5]      clk1 (rising)     NA             7.309       45.000       37.691
+Dout[6]      clk1 (rising)     NA             7.653       45.000       37.347
+Dout[7]      clk1 (rising)     NA             7.678       45.000       37.322
+Dout[8]      clk1 (rising)     NA             7.682       45.000       37.318
+Dout[9]      clk1 (rising)     NA             7.726       45.000       37.274
+Dout[10]     clk1 (rising)     NA             7.747       45.000       37.253
+Dout[11]     clk1 (rising)     NA             7.743       45.000       37.257
+Dout[12]     clk1 (rising)     NA             7.748       45.000       37.252
+Dout[13]     clk1 (rising)     NA             7.777       45.000       37.223
+Dout[14]     clk1 (rising)     NA             7.791       45.000       37.209
+Dout[15]     clk1 (rising)     NA             7.793       45.000       37.207
+Dout[16]     clk1 (rising)     NA             7.794       45.000       37.206
+Dout[17]     NA                NA             NA          NA           NA    
+=============================================================================
+
+
+
+====================================
+@S0.0 |Detailed Report for Clock: clk1
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                Arrival           
+Instance                       Reference     Type     Pin     Net                      Time        Slack 
+                               Clock                                                                     
+---------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.FIR.SR8[0]     clk1          FDR      Q       dut_inst.Din_c_11[0]     0.817       37.206
+FB1.uA.dut_inst.FIR.SR3[0]     clk1          FDR      Q       dut_inst.Din_c_2[0]      0.817       37.368
+FB1.uA.dut_inst.FIR.SR5[0]     clk1          FDR      Q       dut_inst.Din_c_8[0]      0.817       37.372
+FB1.uA.dut_inst.FIR.SR8[1]     clk1          FDR      Q       dut_inst.Din_c_11[1]     0.817       37.399
+FB1.uA.dut_inst.FIR.SR8[2]     clk1          FDR      Q       dut_inst.Din_c_11[2]     0.817       37.399
+FB1.uA.dut_inst.FIR.SR8[3]     clk1          FDR      Q       dut_inst.Din_c_11[3]     0.817       37.502
+FB1.uA.dut_inst.FIR.SR3[1]     clk1          FDR      Q       dut_inst.Din_c_2[1]      0.817       37.579
+FB1.uA.dut_inst.FIR.SR5[1]     clk1          FDR      Q       dut_inst.Din_c_8[1]      0.817       37.594
+FB1.uA.dut_inst.FIR.SR3[2]     clk1          FDR      Q       dut_inst.Din_c_2[2]      0.817       37.603
+FB1.uA.dut_inst.FIR.SR8[4]     clk1          FDR      Q       dut_inst.Din_c_11[4]     0.817       37.609
+=========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+               Starting                                                 Required           
+Instance       Reference     Type     Pin          Net                  Time         Slack 
+               Clock                                                                       
+-------------------------------------------------------------------------------------------
+Dout[17:0]     clk1          Port     Dout[16]     Dout_aptn_ft[16]     45.000       37.206
+Dout[17:0]     clk1          Port     Dout[15]     Dout_aptn_ft[15]     45.000       37.207
+Dout[17:0]     clk1          Port     Dout[14]     Dout_aptn_ft[14]     45.000       37.209
+Dout[17:0]     clk1          Port     Dout[13]     Dout_aptn_ft[13]     45.000       37.223
+Dout[17:0]     clk1          Port     Dout[12]     Dout_aptn_ft[12]     45.000       37.252
+Dout[17:0]     clk1          Port     Dout[10]     Dout_aptn_ft[10]     45.000       37.253
+Dout[17:0]     clk1          Port     Dout[11]     Dout_aptn_ft[11]     45.000       37.257
+Dout[17:0]     clk1          Port     Dout[9]      Dout_aptn_ft[9]      45.000       37.274
+Dout[17:0]     clk1          Port     Dout[8]      Dout_aptn_ft[8]      45.000       37.318
+Dout[17:0]     clk1          Port     Dout[7]      Dout_aptn_ft[7]      45.000       37.322
+===========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      45.000
+    = Required time:                         45.000
+
+    - Propagation time:                      7.027
+    - Clock delay at starting point:         0.767
+    = Slack (critical) :                     37.206
+
+    Number of logic level(s):                13
+    Starting point:                          FB1.uA.dut_inst.FIR.SR8[0] / Q
+    Ending point:                            Dout[17:0] / Dout[16]
+    The start point is clocked by            clk1 [rising] (rise=0.000 fall=22.500 period=45.000) on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                             Pin          Pin               Arrival     No. of    
+Name                                            Type       Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.FIR.SR8[0]                      FDR        Q            Out     0.050     0.817 r     -         
+dut_inst.Din_c_11[0]                            Net        -            -       0.349     -           3         
+FB1.uA.dut_inst.FIR.un1_Din_axb_0               LUT2       I1           In      -         1.166 r     -         
+FB1.uA.dut_inst.FIR.un1_Din_axb_0               LUT2       O            Out     0.047     1.212 r     -         
+dut_inst.FIR.Dout_1_6[0]                        Net        -            -       0.379     -           4         
+FB1.uA.dut_inst.FIR.un1_Din_cry_3               CARRY8     S[0]         In      -         1.592 r     -         
+FB1.uA.dut_inst.FIR.un1_Din_cry_3               CARRY8     O[2]         Out     0.095     1.687 r     -         
+dut_inst.un1_Din_cry_3_O[2]                     Net        -            -       0.349     -           3         
+FB1.uA.dut_inst.FIR.un1_Din_1_0_cry_3_RNO_0     INV        I            In      -         2.036 r     -         
+FB1.uA.dut_inst.FIR.un1_Din_1_0_cry_3_RNO_0     INV        O            Out     0.027     2.063 f     -         
+dut_inst.FIR.un1_Din_i_0[2]                     Net        -            -       0.273     -           1         
+FB1.uA.dut_inst.FIR.un1_Din_1_0_cry_3           CARRY8     S[2]         In      -         2.336 f     -         
+FB1.uA.dut_inst.FIR.un1_Din_1_0_cry_3           CARRY8     O[2]         Out     0.085     2.421 r     -         
+dut_inst.FIR.un1_Din_1[2]                       Net        -            -       0.394     -           5         
+FB1.uA.dut_inst.FIR.Dout_1_6_1                  LUT4       I3           In      -         2.815 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_6_1                  LUT4       O            Out     0.029     2.844 r     -         
+dut_inst.Dout_1_6_1                             Net        -            -       0.319     -           2         
+FB1.uA.dut_inst.FIR.Dout_1_6_axb_2              LUT4       I2           In      -         3.163 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_6_axb_2              LUT4       O            Out     0.029     3.192 r     -         
+dut_inst.FIR.Dout_1_6_axb_2                     Net        -            -       0.273     -           1         
+FB1.uA.dut_inst.FIR.Dout_1_6_cry_3              CARRY8     S[2]         In      -         3.465 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_6_cry_3              CARRY8     O[2]         Out     0.085     3.550 r     -         
+dut_inst.FIR.Dout_1_6[3]                        Net        -            -       0.319     -           2         
+FB1.uA.dut_inst.FIR.Dout_1_4_axb_3              LUT2       I0           In      -         3.868 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_4_axb_3              LUT2       O            Out     0.029     3.897 r     -         
+dut_inst.FIR.Dout_1_4_axb_3                     Net        -            -       0.273     -           1         
+FB1.uA.dut_inst.FIR.Dout_1_4_cry_3              CARRY8     S[3]         In      -         4.171 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_4_cry_3              CARRY8     O[5]         Out     0.128     4.299 r     -         
+dut_inst.FIR.Dout_1_4[5]                        Net        -            -       0.319     -           2         
+FB1.uA.dut_inst.FIR.Dout_1_axb_5                LUT3       I2           In      -         4.618 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_axb_5                LUT3       O            Out     0.029     4.647 r     -         
+dut_inst.FIR.Dout_1_axb_5                       Net        -            -       0.319     -           2         
+FB1.uA.dut_inst.FIR.Dout_1_cry_8                CARRY8     S[0]         In      -         4.965 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_cry_8                CARRY8     CO[7]        Out     0.130     5.096 r     -         
+dut_inst.FIR.Dout_1_cry_12                      Net        -            -       0.000     -           1         
+FB1.uA.dut_inst.FIR.Dout_1_s_16                 CARRY8     CI           In      -         5.096 r     -         
+FB1.uA.dut_inst.FIR.Dout_1_s_16                 CARRY8     O[3]         Out     0.081     5.176 r     -         
+dut_inst.Dout_1_s_16_O[3]                       Net        -            -       0.273     -           1         
+FB1.uA.dut_inst.Dout_obuf[16]                   OBUF       I            In      -         5.450 r     -         
+FB1.uA.dut_inst.Dout_obuf[16]                   OBUF       O            Out     1.026     6.476 r     -         
+Dout[16]                                        Net        -            -       1.318     -           1         
+Dout[17:0]                                      Port       Dout[16]     Out     -         7.794 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 7.027 is 1.870(26.6%) logic and 5.156(73.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Start clock path:
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                              Type      Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+Start Clock :                     clk1                                                       
+------------                                                                                 
+clk1                              Port      clk1     In      -         0.000 r     -         
+clk1                              Net       -        -       0.000     -           1         
+FB1.uA.dut_inst.clk1_ibuf_iso     IBUFG     I        In      -         0.000 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso     IBUFG     O        Out     0.509     0.509 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso     Net       -        -       0.157     -           1         
+FB1.uA.dut_inst.clk1_ibuf         BUFG      I        In      -         0.666 r     -         
+FB1.uA.dut_inst.clk1_ibuf         BUFG      O        Out     0.101     0.767 r     -         
+FB1.uA.dut_inst.clk1_c            Net       -        -       0.000     -           65        
+FB1.uA.dut_inst.FIR.SR8[0]        FDR       C        In      -         0.767 r     -         
+=============================================================================================
+
+
+
+
+====================================
+@S0.0 |Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                     Arrival           
+Instance     Reference     Type     Pin        Net        Time        Slack 
+             Clock                                                          
+----------------------------------------------------------------------------
+Din[7:0]     System        Port     Din[2]     Din[2]     0.000       39.500
+Din[7:0]     System        Port     Din[3]     Din[3]     0.000       39.500
+Din[7:0]     System        Port     Din[4]     Din[4]     0.000       39.500
+Din[7:0]     System        Port     Din[5]     Din[5]     0.000       39.500
+Din[7:0]     System        Port     Din[6]     Din[6]     0.000       39.500
+Din[7:0]     System        Port     Din[7]     Din[7]     0.000       39.500
+Din[7:0]     System        Port     Din[0]     Din[0]     0.000       40.847
+Din[7:0]     System        Port     Din[1]     Din[1]     0.000       40.893
+============================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                               Starting                                                  Required            
+Instance                       Reference     Type     Pin          Net                   Time         Slack  
+                               Clock                                                                         
+-------------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.FIR.SR1[2]     System        FDR      D            dut_inst.Din_c[2]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[3]     System        FDR      D            dut_inst.Din_c[3]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[4]     System        FDR      D            dut_inst.Din_c[4]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[5]     System        FDR      D            dut_inst.Din_c[5]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[6]     System        FDR      D            dut_inst.Din_c[6]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[7]     System        FDR      D            dut_inst.Din_c[7]     45.785       39.500 
+FB1.uA.dut_inst.FIR.SR1[0]     System        FDR      D            dut_inst.Din_c[0]     45.785       40.847 
+FB1.uA.dut_inst.FIR.SR1[1]     System        FDR      D            dut_inst.Din_c[1]     45.785       40.893 
+Dout[17:0]                     System        Port     Dout[16]     Dout_aptn_ft[16]      1000.000     987.222
+Dout[17:0]                     System        Port     Dout[15]     Dout_aptn_ft[15]      1000.000     987.222
+=============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      45.000
+    - Setup time:                            -0.018
+    + Clock delay at ending point:           0.767
+    = Required time:                         45.785
+
+    - Propagation time:                      6.285
+    = Slack (non-critical) :                 39.500
+
+    Number of logic level(s):                1
+    Starting point:                          Din[7:0] / Din[2]
+    Ending point:                            FB1.uA.dut_inst.FIR.SR1[2] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            clk1 [rising] (rise=0.000 fall=22.500 period=45.000) on pin C
+
+Instance / Net                           Pin        Pin               Arrival     No. of    
+Name                            Type     Name       Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+Din[7:0]                        Port     Din[2]     In      0.000     0.000 r     -         
+Din[2]                          Net      -          -       5.146     -           1         
+FB1.uA.dut_inst.Din_ibuf[2]     IBUF     I          In      -         5.146 r     -         
+FB1.uA.dut_inst.Din_ibuf[2]     IBUF     O          Out     0.790     5.936 r     -         
+dut_inst.Din_c[2]               Net      -          -       0.349     -           3         
+FB1.uA.dut_inst.FIR.SR1[2]      FDR      D          In      -         6.285 r     -         
+============================================================================================
+Total path delay (propagation time + setup) of 6.267 is 0.772(12.3%) logic and 5.495(87.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+End clock path:
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                              Type      Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+Start Clock :                     clk1                                                       
+------------                                                                                 
+clk1                              Port      clk1     In      -         0.000 r     -         
+clk1                              Net       -        -       0.000     -           1         
+FB1.uA.dut_inst.clk1_ibuf_iso     IBUFG     I        In      -         0.000 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso     IBUFG     O        Out     0.509     0.509 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso     Net       -        -       0.157     -           1         
+FB1.uA.dut_inst.clk1_ibuf         BUFG      I        In      -         0.666 r     -         
+FB1.uA.dut_inst.clk1_ibuf         BUFG      O        Out     0.101     0.767 r     -         
+FB1.uA.dut_inst.clk1_c            Net       -        -       0.000     -           65        
+FB1.uA.dut_inst.FIR.SR1[2]        FDR       C        In      -         0.767 r     -         
+=============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+@S0.0 |Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+
+Starting Time budgeting (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+
+Starting CTB multihop constraint generation  (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+
+Time-Budgeting stats:
+-----------------------------------------------------
+	 # partitions  			=          3
+	 # paths       			=        133
+		 # 2-hop paths     	=         25
+		 # 3-hop paths     	=        108
+	 # timing segments 		=        374
+	 # logic segments  		=        158
+-----------------------------------------------------
+
+Finished CTB multihop constraint generation  (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+
+Finished Time budgeting (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 1243MB peak: 1243MB)
+
+Process took 0h:00m:08s realtime, 0h:00m:08s cputime
+# Wed Apr 19 18:42:12 2023
+
+###########################################################]
