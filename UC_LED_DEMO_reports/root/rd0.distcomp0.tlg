@@ -1,0 +1,12 @@
+@N:: Applying property .distcompmodetop with value 1 on module top in library work
+@N:: Applying property .distcompnoprune with value 1 on module top in library work
+@N:: Applying property .noprune with value 1 on module top in library work
+@N:: Applying property .distcompnoprune with value 1 on module FIR in library work
+@N:: Applying property .noprune with value 1 on module FIR in library work
+Selecting top level module top
+@N: CG364 :"/home/m110/m110063541/synos/Lab1_PCflow/src/FIR.v":1:7:1:9|Synthesizing module FIR in library work.
+Running optimization stage 1 on FIR .......
+Finished optimization stage 1 on FIR (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+@N: CG364 :"/home/m110/m110063541/synos/Lab1_PCflow/src/top.v":1:7:1:9|Synthesizing module top in library work.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
