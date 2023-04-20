@@ -1,0 +1,122 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/|pa0
+Synopsys Partitioner, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+##############################################################################
+########################## TDM QUALIFIED NETS ##########################
+##############################################################################
+TDM Qualification type: all
+Qualified Nets          Source FPGA  Sink FPGA(s)  Sink Instance                      Driver Instance                               Source Clock  Dest Clock  Clock Group  Slack    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rst_n                   FB1.uA       FB1.uB        FB1.uB.aptn_reset_sync_rst_n.D[0]  FB1.uA.hyper_connect_USR_LOCAL_RESET.out1[0]  N/A           N/A         N/A          100000   
+un1_count_1[1]          FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uA.count[3:0].Q[1]                        clk1:r        clk1:r      d1           41.9778  
+un1_count_1[2]          FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uA.count[3:0].Q[2]                        clk1:r        clk1:r      d1           41.9778  
+un1_count_1[3]          FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[1]     FB1.uA.count[3:0].Q[3]                        clk1:r        clk1:r      d1           42.8873  
+un1_count_6[0]          FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[3]      FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+un1_remainder_reg_1[0]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.4653  
+un1_remainder_reg_1[1]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[1]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.347   
+un1_remainder_reg_1[2]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[2]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.343   
+un1_remainder_reg_1[3]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.339   
+un1_remainder_reg_1[4]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[4]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.335   
+un1_remainder_reg_1[5]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[5]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.331   
+un1_remainder_reg_1[6]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[6]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.327   
+un1_remainder_reg_1[7]  FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[7]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           43.323   
+un1_in_valid_2          FB1.uA       FB1.uB        FB1.uB.quotient[7:0].E             in_valid.in_valid                             clk1:r        clk1:r      d1           42.6185  
+un1_in_valid_6          FB1.uA       FB1.uB        FB1.uB.quotient[7:0].E             in_valid.in_valid                             clk1:r        clk1:r      d1           42.7317  
+un1_remainder_reg_2[0]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[0]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[1]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[1]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[2]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[2]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[3]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[3]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[4]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[4]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[5]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[5]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[6]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[6]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_remainder_reg_2[7]  FB1.uA       FB1.uB        FB1.uB.remainder[7:0].D[7]         in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[0]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[0]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[1]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[1]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[2]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[2]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[3]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[3]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[4]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[4]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[5]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[5]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[6]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[6]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg[7]     FB1.uA       FB1.uB        FB1.uB.quotient[7:0].D[7]          in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_count_8[0]          FB1.uB       FB1.uA        FB1.uA.count[3:0].D[0]             in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_count_8[1]          FB1.uB       FB1.uA        FB1.uA.count[3:0].D[1]             in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_count_8[2]          FB1.uB       FB1.uA        FB1.uA.count[3:0].D[2]             in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_count_8[3]          FB1.uB       FB1.uA        FB1.uA.count[3:0].D[3]             in_valid.in_valid                             clk1:r        clk1:r      d1           42.6503  
+un1_quotient_reg_1[0]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[0]      in_valid.in_valid                             clk1:r        clk1:r      d1           42.3829  
+un1_quotient_reg_1[1]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[1]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[2]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[2]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[3]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[3]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[4]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[4]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[5]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[5]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[6]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[6]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_quotient_reg_1[7]   FB1.uA       FB1.uB        FB1.uB.quotient_reg[7:0].D[7]      in_valid.in_valid                             clk1:r        clk1:r      d1           41.8325  
+un1_remainder_reg_3[0]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.3713  
+un1_remainder_reg_3[1]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[1]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[2]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[2]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[3]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[4]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[4]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[5]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[5]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[6]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[6]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+un1_remainder_reg_3[7]  FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[7]     in_valid.in_valid                             clk1:r        clk1:r      d1           41.9728  
+count[0]                FB1.uA       FB1.uB        FB1.uA.count[3:0].D[1]             FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+count[1]                FB1.uA       FB1.uB        FB1.uA.c_state[2:0].D[0]           FB1.uA.count[3:0].Q[1]                        clk1:r        clk1:r      d1           41.8408  
+count[2]                FB1.uA       FB1.uB        FB1.uA.c_state[2:0].D[0]           FB1.uA.count[3:0].Q[2]                        clk1:r        clk1:r      d1           41.8448  
+count[3]                FB1.uA       FB1.uB        FB1.uA.count[3:0].D[0]             FB1.uA.count[3:0].Q[3]                        clk1:r        clk1:r      d1           41.8149  
+input_B[0]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[0]                      clk1:r        clk1:r      d1           42.0529  
+input_B[1]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[1]                      clk1:r        clk1:r      d1           42.0569  
+input_B[2]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[2]                      clk1:r        clk1:r      d1           42.0609  
+input_B[3]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[3]                      clk1:r        clk1:r      d1           42.0649  
+input_B[4]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[4]                      clk1:r        clk1:r      d1           42.0689  
+input_B[5]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[5]                      clk1:r        clk1:r      d1           42.0729  
+input_B[6]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[6]                      clk1:r        clk1:r      d1           42.0769  
+input_B[7]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[3]     FB1.uA.input_B[7:0].Q[7]                      clk1:r        clk1:r      d1           42.0809  
+input_A[0]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[0]                      clk1:r        clk1:r      d1           43.6494  
+input_A[1]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[1]                      clk1:r        clk1:r      d1           43.6494  
+input_A[2]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[2]                      clk1:r        clk1:r      d1           43.6494  
+input_A[3]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[3]                      clk1:r        clk1:r      d1           43.6494  
+input_A[4]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[4]                      clk1:r        clk1:r      d1           43.6494  
+input_A[5]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[5]                      clk1:r        clk1:r      d1           43.6494  
+input_A[6]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[6]                      clk1:r        clk1:r      d1           43.6494  
+input_A[7]              FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[7]                      clk1:r        clk1:r      d1           43.6494  
+remainder_reg[0]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[0]                clk1:r        clk1:r      d1           42.0036  
+remainder_reg[1]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[1]                clk1:r        clk1:r      d1           42.0076  
+remainder_reg[2]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[2]                clk1:r        clk1:r      d1           42.0116  
+remainder_reg[3]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[3]                clk1:r        clk1:r      d1           42.0156  
+remainder_reg[4]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[4]                clk1:r        clk1:r      d1           42.0196  
+remainder_reg[5]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[5]                clk1:r        clk1:r      d1           42.0236  
+remainder_reg[6]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[6]                clk1:r        clk1:r      d1           42.0276  
+remainder_reg[7]        FB1.uB       FB1.uA        FB1.uA.c_state[2:0].D[0]           FB1.uB.remainder_reg[7:0].Q[7]                clk1:r        clk1:r      d1           42.0316  
+input_A_dec[0]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[1]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[2]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[3]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[4]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[5]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[6]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.3713  
+input_A_dec[7]          FB1.uA       FB1.uB        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.count[3:0].Q[0]                        clk1:r        clk1:r      d1           41.4797  
+input_A_pmux            FB1.uB       FB1.uA        FB1.uB.remainder_reg[7:0].D[0]     FB1.uA.input_A[7:0].Q[1]                      clk1:r        clk1:r      d1           41.3713  
+quotient_reg[0]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[0]      FB1.uB.quotient_reg[7:0].Q[0]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[1]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[1]      FB1.uB.quotient_reg[7:0].Q[1]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[2]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[2]      FB1.uB.quotient_reg[7:0].Q[2]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[3]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[3]      FB1.uB.quotient_reg[7:0].Q[3]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[4]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[4]      FB1.uB.quotient_reg[7:0].Q[4]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[5]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[5]      FB1.uB.quotient_reg[7:0].Q[5]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[6]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[6]      FB1.uB.quotient_reg[7:0].Q[6]                 clk1:r        clk1:r      d1           44.1679  
+quotient_reg[7]         FB1.uB       FB1.uA        FB1.uB.quotient_reg[7:0].D[7]      FB1.uB.quotient_reg[7:0].Q[7]                 clk1:r        clk1:r      d1           44.1679  
+==================================================================================================================================================================================
