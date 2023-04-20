@@ -1,7 +1,5 @@
 # 1. Introduce
-這是一個rtl code，功能為偵測輸入值的錯誤。
-以此code為例，當輸入值出現連續的'1' '0' '1'就使輸出為1。
-透過條件的變化即可達到偵錯功能，進而偵錯出哪部分的輸入有異常。
+這是一個rtl code，功能為偵測輸入值的錯誤。  以此code為例，當輸入值出現連續的'1' '0' '1'就使輸出為1。  透過條件的變化即可達到偵錯功能，進而偵錯出哪部分的輸入有異常。
 
 # 2.Block Diagram
 
@@ -28,3 +26,6 @@ FB1_uB: timing summary
 FB1_uB: timing summary_min
 
 ![timing summary min_FB1_uB](https://user-images.githubusercontent.com/74593052/233317631-4ffdb237-94ff-48ac-bcce-f263b6befbda.png)
+
+# 5.Conclusion
+這份專題是使用protocompiler100去完成，基本上的flow為撰寫RTL
