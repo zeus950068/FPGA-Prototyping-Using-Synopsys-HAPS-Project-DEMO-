@@ -30,4 +30,8 @@ FB1_uB: timing summary_min
 ![timing summary min_FB1_uB](https://user-images.githubusercontent.com/74593052/233317631-4ffdb237-94ff-48ac-bcce-f263b6befbda.png)
 
 # 5.Conclusion
-這份專題是使用protocompiler100去完成，基本上的flow為撰寫RTL
+這份專題是使用protocompiler100去完成，基本上的flow如下:  
+1.撰寫RTL  
+2.Compile RTL並生成schematic圖(gate level層次)  
+3.對合成後電路圖進行partition，以達到面積最佳化  
+4.
