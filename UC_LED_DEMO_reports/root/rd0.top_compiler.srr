@@ -1,0 +1,101 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/|root.rd0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/|root.rd0
+Synopsys Verilog Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@N|Running compiler in Diagnostic mode
+@N|Running compiler in Fast Synthesis mode
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library work)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library work)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_him_async_fifo_2048x258_xcvu440_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v" (library snps_haps)
+@N: CG1222 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v":17:7:17:43|Previous declaration of module umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 found
+@W: CG275 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v":17:7:17:43|Duplicate module name umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 (using last description encountered)!
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v" (library snps_haps)
+@N: CG334 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":925:15:925:27|Read directive translate_off.
+@N: CG333 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":930:15:930:26|Read directive translate_on.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":16493:3:16327:8|Macro definition for UMR3___GUARD__DW_AXI_GM_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":21144:3:20944:8|Macro definition for UMR3___GUARD__DW_AXI_GS_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/clocks/gsv_trigger_hypermods.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v" (library work)
+@N|stack limit increased to max
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":1:7:1:9|Synthesizing module top in library work.
+@N: CG179 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":95:14:95:18|Removing redundant assignment.
+@N: CG179 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":104:17:104:24|Removing redundant assignment.
+@N: CG179 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":113:18:113:26|Removing redundant assignment.
+@N: CG179 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":123:23:123:34|Removing redundant assignment.
+@W: CG1340 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":133:54:133:61|Index into variable input_A could be out of range ; a simulation mismatch is possible.
+@N: CG179 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":136:40:136:52|Removing redundant assignment.
+@W: CG133 :"/home/m110/m110063541/synos/kai/Lab1_PCflow/src/top.v":15:17:15:17|Object i is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 208MB)
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 208MB peak: 208MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 21:59:50 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/rtl_diagnostics/root.rd0/synwork/top_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 21:59:50 2023
+
+###########################################################]
