@@ -8,7 +8,7 @@
 ![block diagram](https://user-images.githubusercontent.com/74593052/233564440-9284ff68-6a1f-4ce9-8687-9f1bbddc52ea.png)
 
 
-# 3.The Schematic of FPGA_A
+# 3.The Schematic of FPGA_A and FPGA_B
 
 Whole circuit schematic:
 ![schematic](https://user-images.githubusercontent.com/74593052/233564869-06e5f1a9-0722-4f5e-95fa-d723d9ff7772.png)
