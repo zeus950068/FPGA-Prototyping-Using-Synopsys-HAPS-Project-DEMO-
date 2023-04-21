@@ -1,0 +1,206 @@
+#
+#Copyright (C) 1994-2021 Synopsys, Inc.
+#This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+#and may only be used pursuant to the terms and conditions of a written license agreement
+#with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+#Synopsys software or the associated documentation is strictly prohibited.
+#Tool: HAPS (R) ProtoCompiler 100
+#Build: R-2020.12-SP1-1
+#Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: CentOS release 6.10 (Final)
+#Hostname: ws32
+
+#Database state : /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/|sr0
+#Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+@S1 AP337 |Connection Model
+connection_model DIRECT -modules { \
+}
+connection_model HSTDM_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model ACPM -modules { \
+   ACPM_2 2
+   ACPM_3 3
+   ACPM_4 4
+   ACPM_5 5
+   ACPM_6 6
+   ACPM_7 7
+   ACPM_8 8
+   ACPM_9 9
+   ACPM_10 10
+   ACPM_11 11
+   ACPM_12 12
+   ACPM_13 13
+   ACPM_14 14
+   ACPM_15 15
+   ACPM_16 16
+   ACPM_17 17
+   ACPM_18 18
+   ACPM_19 19
+   ACPM_20 20
+   ACPM_24 24
+   ACPM_28 28
+   ACPM_32 32
+}
+connection_model HSTDM -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model MGTDM_Y -modules { \
+   HSTDM_MGT_64 64
+   HSTDM_MGT_128 128
+   HSTDM_MGT_256 256
+   HSTDM_MGT_512 512
+   HSTDM_MGT_1024 1024
+}
+connection_model MGTDM -modules { \
+   HSTDM_ERD_MGT_256 256
+   HSTDM_ERD_MGT_512 512
+   HSTDM_ERD_MGT_1024 1024
+}
+
+@S2 AP248 |Feedthrough Insertion and Net Splitting
+
+modify_net -feedthrough FB1.uB -orig_net b -in_net b -out_net b_aptn_ft
+modify_net -disconnect b -connect b_aptn_ft -to FPGA FB1.uA
+modify_net -feedthrough FB1.uB -orig_net a -in_net a -out_net a_aptn_ft
+modify_net -disconnect a -connect a_aptn_ft -to FPGA FB1.uA
+
+@S3 AP345 |Net and Global Routing Information
+@N: AP305 |This section contains information only for nets that are external to FPGAs
+
+@S3.1 AP346 |Routed Nets
+
+net_attribute -tdm_qualified 0 a_aptn_ft
+global_route a_aptn_ft -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 969 \
+   -from FB1.uB -to {FB1.uA} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cout
+global_route cout -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 sum
+global_route sum -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 b_aptn_ft
+global_route b_aptn_ft -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from FB1.uB -to {FB1.uA} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 ci
+global_route ci -slack_pre_tdm 998 -slack_post_tdm 988 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+global_route sum1 -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 b
+global_route b -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+global_route cout1 -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 967 \
+   -from FB1.uA -to {FB1.uB} -using FB1_A1_B19_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 a
+global_route a -multi_hop 2 -slack_pre_tdm 995 -slack_post_tdm 969 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+
+@S4 AP306 |Detailed Routing Information
+@N: AP306 |This section contains information only for nets which are assigned to board traces
+
+@S4.1 AP348 |Trace Assignments
+
+assign_trace sum1 FB1_A1_A[0]
+assign_trace cout1 FB1_A1_C[0]
+assign_trace a_aptn_ft FB1.AI2_N[9]
+assign_trace b_aptn_ft FB1_A1_A[1]
+assign_trace cout FB1_B5_A[4]
+assign_trace sum FB1_B5_A[5]
+assign_trace ci FB1_B5_A[0]
+assign_trace b FB1_B5_A[1]
+assign_trace a FB1_B5_A[2]
