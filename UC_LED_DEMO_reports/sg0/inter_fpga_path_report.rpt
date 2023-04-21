@@ -1,0 +1,112 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws32
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/m110/m110063541/synos/kai/Lab1_PCflow/UC_LED_DEMO/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Id  Slack (ns)  Source Clock  Sink Clock  Exception  Hops    TDMs used per hop**  Total TDM delay (ns)*                   User logic delay (ns)  Path delay (ns)  Requirement (ns)  Start Point  End Point  Net Name          
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1   980.109     System:r      System:r    -          FB1_uA  x1: x1               (trace:5.146) + (trace:5.146) = 10.292  8.281                  19.891           1000.000          b.b          sum.sum    b_aptn_ft: sum1   
+2   980.137     System:r      System:r    -          FB1_uA  x1: x1               (trace:5.146) + (trace:5.146) = 10.292  6.164                  19.863           1000.000          b.b          cout.cout  b_aptn_ft: cout1  
+3   981.485     System:r      System:r    -          FB1_uA  x1: x1               (trace:3.753) + (trace:5.146) = 8.899   4.544                  19.891           1000.000          a.a          sum.sum    a_aptn_ft: sum1   
+4   981.512     System:r      System:r    -          FB1_uA  x1: x1               (trace:3.753) + (trace:5.146) = 8.899   2.455                  19.863           1000.000          a.a          cout.cout  a_aptn_ft: cout1  
+============================================================================================================================================================================================================================
+
+Path: #1
+Starting point:                     b/b
+Ending point:                       sum/sum
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        19.891
+Required time                       1000.000
+Slack:                              980.109
+
+Instance / Net name           Pin name     Type     FPGA       Arrival time
+---------------------------------------------------------------------------
+b                             b            Port     top               1.318
+FB1.uB/b_aptn_ft_obuf         O            OBUF     FB1_uB            3.407
+b_aptn_ft                     -            Net      -          -           
+FB1.uA/dut_inst.b_ibuf        I            IBUF     FB1_uA            8.553
+FB1.uA/dut_inst.sum1_obuf     O            OBUF     FB1_uA           10.990
+sum1                          -            Net      -          -           
+FB1.uB/dut_inst.sum1_ibuf     I            IBUF     FB1_uB           16.136
+sum                           sum          Port     top              19.891
+===========================================================================
+
+Path: #2
+Starting point:                     b/b
+Ending point:                       cout/cout
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        19.863
+Required time                       1000.000
+Slack:                              980.137
+
+Instance / Net name            Pin name     Type     FPGA       Arrival time
+----------------------------------------------------------------------------
+b                              b            Port     top               1.318
+FB1.uB/b_aptn_ft_obuf          O            OBUF     FB1_uB            3.407
+b_aptn_ft                      -            Net      -          -           
+FB1.uA/dut_inst.b_ibuf         I            IBUF     FB1_uA            8.553
+FB1.uA/dut_inst.cout1_obuf     O            OBUF     FB1_uA           10.990
+cout1                          -            Net      -          -           
+FB1.uB/dut_inst.cout1_ibuf     I            IBUF     FB1_uB           16.136
+cout                           cout         Port     top              19.863
+============================================================================
+
+Path: #3
+Starting point:                     a/a
+Ending point:                       sum/sum
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        19.891
+Required time                       1000.000
+Slack:                              981.485
+
+Instance / Net name           Pin name     Type     FPGA       Arrival time
+---------------------------------------------------------------------------
+a                             a            Port     top               1.318
+FB1.uB/a_aptn_ft_obuf         O            OBUF     FB1_uB            3.407
+a_aptn_ft                     -            Net      -          -           
+FB1.uA/dut_inst.a_ibuf        I            IBUF     FB1_uA            7.160
+FB1.uA/dut_inst.sum1_obuf     O            OBUF     FB1_uA           10.990
+sum1                          -            Net      -          -           
+FB1.uB/dut_inst.sum1_ibuf     I            IBUF     FB1_uB           16.136
+sum                           sum          Port     top              19.891
+===========================================================================
+
+Path: #4
+Starting point:                     a/a
+Ending point:                       cout/cout
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        19.863
+Required time                       1000.000
+Slack:                              981.512
+
+Instance / Net name            Pin name     Type     FPGA       Arrival time
+----------------------------------------------------------------------------
+a                              a            Port     top               1.318
+FB1.uB/a_aptn_ft_obuf          O            OBUF     FB1_uB            3.407
+a_aptn_ft                      -            Net      -          -           
+FB1.uA/dut_inst.a_ibuf         I            IBUF     FB1_uA            7.160
+FB1.uA/dut_inst.cout1_obuf     O            OBUF     FB1_uA           10.990
+cout1                          -            Net      -          -           
+FB1.uB/dut_inst.cout1_ibuf     I            IBUF     FB1_uB           16.136
+cout                           cout         Port     top              19.863
+============================================================================
+

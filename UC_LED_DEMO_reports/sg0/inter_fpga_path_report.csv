@@ -1,0 +1,5 @@
+Id,Slack (ns),Source Clock,Sink Clock,Exception,Hops,TDMs used per hop**,Total TDM delay (ns)*,User logic delay (ns),Path delay (ns),Requirement (ns),Start Point,End Point,Net Name,
+1,980.109,System:r,System:r,-,FB1_uA,x1: x1,(trace:5.146) + (trace:5.146) = 10.292,8.281,19.891,1000.000,b.b,sum.sum,b_aptn_ft: sum1
+2,980.137,System:r,System:r,-,FB1_uA,x1: x1,(trace:5.146) + (trace:5.146) = 10.292,6.164,19.863,1000.000,b.b,cout.cout,b_aptn_ft: cout1
+3,981.485,System:r,System:r,-,FB1_uA,x1: x1,(trace:3.753) + (trace:5.146) = 8.899,4.544,19.891,1000.000,a.a,sum.sum,a_aptn_ft: sum1
+4,981.512,System:r,System:r,-,FB1_uA,x1: x1,(trace:3.753) + (trace:5.146) = 8.899,2.455,19.863,1000.000,a.a,cout.cout,a_aptn_ft: cout1
